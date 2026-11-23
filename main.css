@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #629b5b;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #cb924f;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    justify-items: center; /* Centers grid items horizontally inside their columns */
+    gap: 15px; /* Optional: adds breathing room between columns */
+}
+
+.card {
+    width: 80%;
+    min-height: 100px; /* Forces the box to be visible even when empty */
+    background-color: #cdeaf8;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 2% auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sideBar1 {
+    margin-left: 20px;
+}
+
+.sideBar2{
+    margin-right: 20px;
+}
+
+.sideBar1, .sideBar2{
+    width: 100%;
+    min-height: 200px; /* Forces the box to be visible even when empty */
+    border: 2px solid black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; /* Keeps cards starting near the top; change to 'center' for vertical centering */
+    padding: 10px 0;
+    background-color: #a2ff96;
+}
+
+.sideBar1 .card, .sideBar2 .card{
+    min-height: 100px; /* Forces the box to be visible even when empty */
+    max-height: fit-content;
+    text-decoration: none;
+}
+
+img {
+    max-height: 300px;
+    width: 80%;
+    border-radius: 16px;
+    padding: 5%;
+}
+
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+
+
